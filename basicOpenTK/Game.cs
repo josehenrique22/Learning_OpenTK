@@ -9,7 +9,7 @@ namespace BasicOpenTK{
         public Game()
             : base(GameWindowSettings.Default, NativeWindowSettings.Default)
         {
-
+            this.CenterWindow(new Vector2i(800, 600));
         }
 
         protected override void OnUpdateFrame(FrameEventArgs args)

@@ -1,12 +1,13 @@
+using System;
+using OpenTK.Windowing.Desktop;
 
-namespace BasicOpenTK{
-
+namespace BasicOpenTk
+{
     class Program
     {
-        // recebe a instancia de Game e executa os parametros definidos pelo Costrutor
         static void Main(string[] args)
         {
-            using(Game game = new Game(800, 600, "LearnOpenTK"))
+            using (var game = new Game())
             {
                 game.Run();
             }
